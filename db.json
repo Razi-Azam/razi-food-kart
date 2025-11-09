@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": "user",
+      "name": "Razi User",
+      "email": "user@razi.com",
+      "password": "password"
+    },
+    {
+      "id": "2",
+      "role": "owner",
+      "name": "Razi Owner",
+      "email": "owner@razi.com",
+      "password": "password",
+      "restaurantId": 1
+    },
+    {
+      "id": "ea95",
+      "name": "Sam",
+      "email": "sam@gmail.com",
+      "password": "sam@123",
+      "role": "user"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Razi Tandoor",
+      "location": "City Center",
+      "rating": 4.583333333333334,
+      "ratingsCount": 12,
+      "ownerId": 2
+    },
+    {
+      "id": "2",
+      "name": "Spice Villa",
+      "location": "Market Street",
+      "rating": 4.2,
+      "ratingsCount": 5,
+      "ownerId": null
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "restaurantId": 1,
+      "name": "Shaahi Paneer",
+      "price": 350,
+      "image": "/public/images/foods/shahi-paneer-rice.jpg",
+      "rating": 4.6,
+      "ratingsCount": 8
+    },
+    {
+      "id": "2",
+      "restaurantId": 1,
+      "name": "Paalak Paneer",
+      "price": 400,
+      "image": "/public/images/foods/palak-paneer.jpg",
+      "rating": 4.4,
+      "ratingsCount": 5
+    },
+    {
+      "id": "3",
+      "restaurantId": 2,
+      "name": "Burger",
+      "price": 150,
+      "image": "/public/images/foods/burger.jpg",
+      "rating": 4.3,
+      "ratingsCount": 12
+    },
+    {
+      "id": "4",
+      "restaurantId": 1,
+      "name": "Masala Dosa",
+      "price": 150,
+      "image": "/public/images/foods/dosa.jpg",
+      "rating": 4.3,
+      "ratingsCount": 12
+    },
+    {
+      "id": "5",
+      "restaurantId": 1,
+      "name": "Biryani",
+      "price": 350,
+      "image": "/public/images/foods/biryani.jpg",
+      "rating": 4.3,
+      "ratingsCount": 12
+    },
+    {
+      "id": "6",
+      "restaurantId": 2,
+      "name": "Egg Roti",
+      "price": 100,
+      "image": "/public/images/foods/egg-roti.jpg",
+      "rating": 4.3,
+      "ratingsCount": 12
+    },
+    {
+      "id": "ac8d",
+      "restaurantId": 1,
+      "name": "White Sauce Pasta",
+      "price": 149,
+      "image": "/uploads/1762715793735-pasta.jpg",
+      "rating": 0,
+      "ratingsCount": 0,
+      "outOfStock": false
+    }
+  ],
+  "orders": [],
+  "completedOrders": [
+    {
+      "id": "a55e",
+      "userId": "ea95",
+      "userName": "Sam",
+      "userEmail": "sam@gmail.com",
+      "restaurantId": 1,
+      "items": [
+        {
+          "itemId": "1",
+          "name": "Shaahi Paneer",
+          "qty": 1,
+          "price": 350
+        }
+      ],
+      "total": 350,
+      "status": "Order delivered",
+      "createdAt": "2025-11-09T18:52:15.970Z",
+      "rating": 5,
+      "completedAt": "2025-11-09T18:53:14.443Z"
+    }
+  ]
+}
